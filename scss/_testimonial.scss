@@ -1,0 +1,31 @@
+.testimonial {
+  background-color: #f7f3ef;
+  padding: 30px 15px;
+  @media (min-width: 736px) {
+    padding: 30px 55px;
+  }
+}
+
+.testimonial__detail {
+  width: 100%;
+  margin-bottom: 60px;
+}
+.testimonial__detail_summary {
+  cursor: pointer;
+  font-family: "Cormorant Garamond", serif;
+  outline: none;
+  color: var(--primary-color);
+  font-size: 22px;
+}
+.testimonial__review {
+  line-height: 23px;
+  text-indent: 15px;
+  font-size: 17px;
+  margin: 19px 0;
+}
+.testimonial_reviewer {
+  font-weight: bold;
+  font-size: 31px;
+  font-family: "Tangerine", cursive;
+  margin-left: 15px;
+}

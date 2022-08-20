@@ -1,0 +1,68 @@
+.service {
+  padding: 30px 15px;
+  @media (min-width: 736px) {
+    padding: 30px 55px;
+  }
+}
+.service__heading {
+  font-size: 29px;
+}
+.service__heading_package {
+  margin-top: 22px;
+}
+.service__container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.service__name {
+  font-size: 19px;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+.service__icon {
+  display: block;
+  margin: 0 auto 11px;
+  background: var(--primary-color);
+  padding: 15px;
+  border-radius: 50%;
+}
+.service__price {
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.service__description {
+  margin-bottom: 3px;
+}
+.service__savings {
+  font-size: 18px;
+  margin-top: 20px;
+  background-color: var(--primary-color);
+  padding: 9px 0;
+  color: #f7f3ef;
+}
+.service__cta {
+  margin: 10px auto 0px;
+}
+.package__card {
+  max-width: 315px;
+  padding: 0;
+}
+.card__fb {
+  margin: 0 auto;
+  max-width: 100%;
+  @media (min-width: 736px) {
+    width: 65%;
+  }
+}
+.package__name {
+  margin: 33px 24px;
+}
+.package__description {
+  margin: 3px 20px;
+}
+.package__savings {
+  margin: 20px 0;
+}

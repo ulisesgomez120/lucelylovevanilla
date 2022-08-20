@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lucely Love</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="./js/index.js" type="module" defer></script>
+    <script src="https://embed.acuityscheduling.com/js/embed.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container_select_lang">
+        <select name="language_pref" id="language_pref" class="input input__select">
+          <option value="es" selected>Espa&ntilde;ol</option>
+          <option value="en">English</option>
+        </select>
+      </div>
+      <div class="header_list__social_links">
+        <a href="https://www.facebook.com/TaniaLucelyO/">
+          <img src="assets/icons/facebook.svg" alt="Facebook" />
+        </a>
+        <a href="https://www.instagram.com/Tania_Lucely/">
+          <img src="assets/icons/instagram.svg" alt="Instagram" />
+        </a>
+        <a href="https://www.youtube.com/channel/UCrnz1hrX0f5Nbcbg4pVXF3A">
+          <img src="assets/icons/youtube.svg" alt="Youtube" />
+        </a>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero">
+        <div class="hero__container hero__container_text">
+          <div class="hero__banner_mobile">
+            <span class="hero__title">{{title}}</span>
+            <h1 class="hero__heading">{{heading}}</h1>
+            <p class="hero__subheading">{{subheading}}</p>
+            <a href="#scheduler" class="button hero__cta">{{cta}}</a>
+          </div>
+        </div>
+        <div class="hero__container hero__container_img"></div>
+      </section>
+      <section class="testimonial">
+        <h2 class="heading testimonial__heading">{{testimonial_heading}}</h2>
+        <details open class="testimonial__detail">
+          <summary class="testimonial__detail_summary">{{excerpt_0}}</summary>
+          <p class="testimonial__review">{{review_0}}</p>
+          <p class="testimonial_reviewer">- {{reviewer_0}}</p>
+        </details>
+        <details open class="testimonial__detail">
+          <summary class="testimonial__detail_summary">{{excerpt_1}}</summary>
+          <p class="testimonial__review">{{review_1}}</p>
+          <p class="testimonial_reviewer">- {{reviewer_1}}</p>
+        </details>
+        <details open class="testimonial__detail">
+          <summary class="testimonial__detail_summary">{{excerpt_2}}</summary>
+          <p class="testimonial__review">{{review_2}}</p>
+          <p class="testimonial_reviewer">- {{reviewer_2}}</p>
+        </details>
+      </section>
+      <section class="service">
+        <h2 class="heading service__heading">{{service_heading}}</h2>
+        <div class="service__container">
+          <div class="card">
+            <p class="service__name">{{service_name_0}}</p>
+            <img src="./assets/icons/message-square.svg" alt="chat" class="service__icon" />
+            <p class="service__price">{{service_price_0}}</p>
+            <p class="service__description">{{service_description_0}}</p>
+            <p class="service__description card__text_secondary">{{service_hosted_0}}</p>
+            <a href="#scheduler" class="button service__cta">{{service_cta}}</a>
+          </div>
+          <div class="card">
+            <p class="service__name">{{service_name_1}}</p>
+            <img src="./assets/icons/phone-call.svg" alt="phone" class="service__icon" />
+            <p class="service__price">{{service_price_1}}</p>
+            <p class="service__description">{{service_description_1}}</p>
+            <p class="service__description card__text_secondary">{{service_hosted_1}}</p>
+            <a href="#scheduler" class="button service__cta">{{service_cta}}</a>
+          </div>
+          <div class="card">
+            <p class="service__name">{{service_name_2}}</p>
+            <img src="./assets/icons/video.svg" alt="video" class="service__icon" />
+            <p class="service__price">{{service_price_2}}</p>
+            <p class="service__description">{{service_description_2}}</p>
+            <p class="service__description card__text_secondary">{{service_hosted_2}}</p>
+            <a href="#scheduler" class="button service__cta">{{service_cta}}</a>
+          </div>
+          <div class="card">
+            <p class="service__name">{{service_name_3}}</p>
+            <img src="./assets/icons/meeting.svg" alt="meeting" class="service__icon" />
+            <p class="service__price">{{service_price_3}}</p>
+            <p class="service__description">{{service_description_3}}</p>
+            <p class="service__description card__text_secondary">{{service_hosted_3}}</p>
+            <a href="#scheduler" class="button service__cta">{{service_cta}}</a>
+          </div>
+        </div>
+        <h2 class="heading service__heading service__heading_package">{{package_heading}}</h2>
+        <div class="service__container">
+          <div class="card package__card">
+            <p class="service__name package__name">{{package_name_0}}</p>
+            <p class="service__price">{{package_price_0}}</p>
+            <p class="service__description package__description">{{package_description_0}}</p>
+            <p class="service__description card__text_secondary package__description">{{package_hosted_0}}</p>
+            <h3 class="service__savings package__savings">{{package_savings_0}}</h3>
+          </div>
+
+          <div class="card package__card">
+            <p class="service__name package__name">{{package_name_1}}</p>
+            <p class="service__price">{{package_price_1}}</p>
+            <p class="service__description package__description">{{package_description_1}}</p>
+            <p class="service__description card__text_secondary package__description">{{package_hosted_1}}</p>
+            <h3 class="service__savings package__savings">{{package_savings_1}}</h3>
+          </div>
+          <div class="card package__card">
+            <p class="service__name package__name">{{package_name_2}}</p>
+            <p class="service__price">{{package_price_2}}</p>
+            <p class="service__description package__description">{{package_description_2}}</p>
+            <p class="service__description card__text_secondary package__description">{{package_hosted_2}}</p>
+            <h3 class="service__savings package__savings">{{package_savings_2}}</h3>
+          </div>
+        </div>
+        <div class="card card__fb"><p>{{fb_message}}</p></div>
+      </section>
+      <iframe
+        id="scheduler"
+        title="Acuity Scheduling"
+        src="https://app.acuityscheduling.com/schedule.php?owner=18908206"
+        width="100%"
+        height="800"
+        frameborder="0"
+      ></iframe>
+    </main>
+  </body>
+</html>

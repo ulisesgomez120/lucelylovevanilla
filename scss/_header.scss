@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8%;
+  padding: 10px 15px;
+  @media (min-width: 736px) {
+    padding: 10px 55px;
+  }
+}
+.input {
+  border: 1px solid #444;
+  /* border radius same as cta button */
+  border-radius: 6px;
+  padding: 4px 8px;
+}
+.header_list__social_links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 165px;
+}
