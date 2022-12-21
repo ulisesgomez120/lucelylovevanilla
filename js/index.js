@@ -1,9 +1,9 @@
 //select language needs to display spanish by default. on change, replace spanish text on page with with value lang
 const data = {
   en_fb:
-    "Join my private Facebook Group! Send an email to <a href='mailto:TaniaLucely143@gmail.com'>TaniaLucely143@gmail.com</a> with your name, age, and Facebook profile. (Facebook group is only in Spanish",
+    "Save $$$ by bundling! Send an email to <a href='mailto:TaniaLucely143@gmail.com'>TaniaLucely143@gmail.com</a> with the subject 'Coaching Bundle' and let us know what you want to bundle",
   es_fb:
-    "Si quieres ser parte del grupo SOY EL PREMIO en Facebook, envia un correo electrónico a <a href='mailto:TaniaLucely143@gmail.com'>TaniaLucely143@gmail.com</a> con tu nombre, edad, y tu perfil de Facebook.",
+    "¡Ahorre $$$ al combinar! Envíe un correo electrónico a <a href='mailto:TaniaLucely143@gmail.com'>TaniaLucely143@gmail.com</a> con el asunto 'Coaching Bundle' y díganos qué desea empaquetar.",
   en_hero: {
     title: "Lucely Love Coach",
     heading: "Love Yourself First",
@@ -48,14 +48,14 @@ const data = {
       {
         name: "3 Phone Calls",
         description: "Receive 3, 45 minute coaching sessions",
-        price: "$390",
+        price: "$299",
         hosted: "Chat through Zoom",
         savings: "Save $60",
       },
       {
         name: "3 Video Calls",
         description: "Receive 3, 45 minute coaching sessions",
-        price: "$525",
+        price: "$499",
         hosted: "Video Call through Zoom",
         savings: "Save $75",
       },
@@ -70,19 +70,19 @@ const data = {
       {
         name: "Phone",
         description: "45 Minute Call",
-        price: "$150",
+        price: "$299",
         hosted: "Hosted Through Zoom",
       },
       {
         name: "Video",
         description: "50 Minute Video Call",
-        price: "$200",
+        price: "$499",
         hosted: "Hosted Through Zoom",
       },
       {
         name: "In Person",
         description: "1 hour and 45 minute in person coaching.",
-        price: "$500",
+        price: "$999",
         hosted: "For women only in OC, LA, & Riverside, CA",
       },
     ],
@@ -131,14 +131,14 @@ const data = {
       {
         name: "3 Llamadas Telefónicas",
         description: "Reciba 3 sesiónes de 45 minutos",
-        price: "$390",
+        price: "$299",
         hosted: "Llamada a través de Zoom",
         savings: "Ahorra $60",
       },
       {
         name: "3 Video Llamadas",
         description: "Reciba 3 sesiónes de 45 minutos",
-        price: "$525",
+        price: "$499",
         hosted: "Video llamadas a través de Zoom",
         savings: "Ahorra $75",
       },
@@ -153,20 +153,20 @@ const data = {
       {
         name: "Teléfono",
         description: "45 Minutos de llamada",
-        price: "$150",
+        price: "$299",
         hosted: "Alojado a través de Zoom",
       },
       {
         name: "Video",
         description: "50 Minutos de llamada en video",
-        price: "$200",
+        price: "$499",
         hosted: "Alojado a través de Zoom",
       },
       {
         // description and duration are switched because of spanish syntax
         name: "En Persona",
         description: "Sesión presencial de 1 hora y 45 minutos.",
-        price: "$500",
+        price: "$999",
         hosted: "Solo para mujeres en OC, LA y Riverside, CA",
       },
     ],
@@ -174,8 +174,98 @@ const data = {
 };
 const main_content = document.getElementById("main");
 const language_select = document.getElementById("language_pref");
-const reference_html = main_content.innerHTML;
+const reference_html = `<section class="hero">
+<div class="hero__container hero__container_text">
+  <div class="hero__banner_mobile">
+    <span class="hero__title">{{title}}</span>
+    <h1 class="hero__heading">{{heading}}</h1>
+    <p class="hero__subheading">{{subheading}}</p>
+    <a href="#scheduler" class="button hero__cta">{{cta}}</a>
+  </div>
+</div>
+<div class="hero__container hero__container_img"></div>
+</section>
+<section class="testimonial">
+<h2 class="heading testimonial__heading">{{testimonial_heading}}</h2>
+<details open="" class="testimonial__detail">
+  <summary class="testimonial__detail_summary">{{excerpt_0}}</summary>
+  <p class="testimonial__review">{{review_0}}</p>
+  <p class="testimonial_reviewer">- {{reviewer_0}}</p>
+</details>
+<details open="" class="testimonial__detail">
+  <summary class="testimonial__detail_summary">{{excerpt_1}}</summary>
+  <p class="testimonial__review">{{review_1}}</p>
+  <p class="testimonial_reviewer">- {{reviewer_1}}</p>
+</details>
+<details open="" class="testimonial__detail">
+  <summary class="testimonial__detail_summary">{{excerpt_2}}</summary>
+  <p class="testimonial__review">{{review_2}}</p>
+  <p class="testimonial_reviewer">- {{reviewer_2}}</p>
+</details>
+</section>
+<section class="service">
+<h2 class="heading service__heading">{{service_heading}}</h2>
+<div class="service__container">
+  <!-- <div class="card">
+    <p class="service__name">{{service_name_0}}</p>
+    <img src="./assets/icons/message-square.svg" alt="chat" class="service__icon" />
+    <p class="service__price">{{service_price_0}}</p>
+    <p class="service__description">{{service_description_0}}</p>
+    <p class="service__description card__text_secondary">{{service_hosted_0}}</p>
+    <a href="#scheduler" class="button service__cta">{{service_cta}}</a>
+  </div> -->
+  <div class="card">
+    <p class="service__name">{{service_name_1}}</p>
+    <img src="./assets/icons/phone-call.svg" alt="phone" class="service__icon">
+    <p class="service__price">{{service_price_1}}</p>
+    <p class="service__description">{{service_description_1}}</p>
+    <p class="service__description card__text_secondary">{{service_hosted_1}}</p>
+    <a href="#scheduler" class="button service__cta">{{service_cta}}</a>
+  </div>
+  <div class="card">
+    <p class="service__name">{{service_name_2}}</p>
+    <img src="./assets/icons/video.svg" alt="video" class="service__icon">
+    <p class="service__price">{{service_price_2}}</p>
+    <p class="service__description">{{service_description_2}}</p>
+    <p class="service__description card__text_secondary">{{service_hosted_2}}</p>
+    <a href="#scheduler" class="button service__cta">{{service_cta}}</a>
+  </div>
+  <div class="card">
+    <p class="service__name">{{service_name_3}}</p>
+    <img src="./assets/icons/meeting.svg" alt="meeting" class="service__icon">
+    <p class="service__price">{{service_price_3}}</p>
+    <p class="service__description">{{service_description_3}}</p>
+    <p class="service__description card__text_secondary">{{service_hosted_3}}</p>
+    <a href="#scheduler" class="button service__cta">{{service_cta}}</a>
+  </div>
+</div>
+<!-- <h2 class="heading service__heading service__heading_package">{{package_heading}}</h2>
+<div class="service__container">
+  <div class="card package__card">
+    <p class="service__name package__name">{{package_name_0}}</p>
+    <p class="service__price">{{package_price_0}}</p>
+    <p class="service__description package__description">{{package_description_0}}</p>
+    <p class="service__description card__text_secondary package__description">{{package_hosted_0}}</p>
+    <h3 class="service__savings package__savings">{{package_savings_0}}</h3>
+  </div>
 
+  <div class="card package__card">
+    <p class="service__name package__name">{{package_name_1}}</p>
+    <p class="service__price">{{package_price_1}}</p>
+    <p class="service__description package__description">{{package_description_1}}</p>
+    <p class="service__description card__text_secondary package__description">{{package_hosted_1}}</p>
+    <h3 class="service__savings package__savings">{{package_savings_1}}</h3>
+  </div>
+  <div class="card package__card">
+    <p class="service__name package__name">{{package_name_2}}</p>
+    <p class="service__price">{{package_price_2}}</p>
+    <p class="service__description package__description">{{package_description_2}}</p>
+    <p class="service__description card__text_secondary package__description">{{package_hosted_2}}</p>
+    <h3 class="service__savings package__savings">{{package_savings_2}}</h3>
+  </div>
+</div> -->
+<div class="card card__fb"><p>{{fb_message}}</p></div>
+</section>`;
 let html = null;
 
 function popullate_data() {
