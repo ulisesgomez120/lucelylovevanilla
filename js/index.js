@@ -3,7 +3,7 @@ const data = {
   en_fb:
     "Save $$$ by bundling! Send an email to <a href='mailto:TaniaLucely143@gmail.com'>TaniaLucely143@gmail.com</a> with the subject 'Coaching Bundle' and let us know what you want to bundle",
   es_fb:
-    "¡Ahorre $$$ cuando haga un paquete! Envíe un correo electrõnico a <a href='mailto:TaniaLucely143@gmail.com'>TaniaLucely143@gmail.com</a> con el asunto 'COACHING BUNDLE' parra recibir los enlaces a nuestros paquetes con un descuento!",
+    "¡Ahorre $$$ cuando haga un paquete! Envíe un correo electrónico a <a href='mailto:TaniaLucely143@gmail.com'>TaniaLucely143@gmail.com</a> con el asunto 'COACHING BUNDLE' para recibir los enlaces a nuestros paquetes con un descuento!",
   en_hero: {
     title: "Lucely Love Coach",
     heading: "Love Yourself First",
